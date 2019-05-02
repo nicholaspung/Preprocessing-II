@@ -176,13 +176,23 @@ nav {
   padding: 30px 0;
   border-bottom: 2px dashed #C0C0C0;
 }
-nav .logo {
+nav div {
   width: 50%;
 }
 nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
+}
+@media only screen and (max-width:500px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 .footer {
   width: 100%;
