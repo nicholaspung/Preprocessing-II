@@ -29,6 +29,16 @@
         border-radius: 10px;
       }
     }
+
+    @media only screen and @mobile {
+      .text-content {
+        width: 100%;
+      }
+
+      .img-content {
+        width: 100%;
+      }
+    }
   }
 
   .inverse-content {
@@ -44,6 +54,12 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media only screen and @mobile {
+      .img-content {
+        order: 1;
+      }
+    }
   }
 
   .content-destination {
@@ -52,6 +68,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media only screen and @mobile {
+      width: 100%;
     }
   }
 
@@ -73,6 +93,22 @@
       font-size: 2rem;
       text-align: center;
       border: 1px solid grey;
+    }
+
+    @media only screen and @mobile {
+      width: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+      flex-wrap: wrap;
+
+      .destination {
+        width: 100%;
+      }
+
+      .btn {
+        .button(#16a2b8, 15px, white);
+        width: 100%;
+      }
     }
   }
 }// home
